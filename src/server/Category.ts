@@ -39,7 +39,8 @@ export const CategoryFindANDMenu = async (req: Request, res: Response) => {
         })
     } catch (err) {
         return res.status(500).json({
-            message: "Error Status 500"
+            message: "Error Status 500",
+            err: err
         })
     }
 }
